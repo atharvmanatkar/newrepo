@@ -7,6 +7,7 @@ import Navbar from './Navbar'
 import Page1 from './Page1'
 import Page2 from './Page2'
 import Footer from './Footer'
+import AllEvents from './AllEvents.jsx'
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Navbar/>
       <Page1 />
       <Page2/>
+      <AllEvents/>
       <Footer/>
     </div>
 
