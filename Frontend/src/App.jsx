@@ -8,11 +8,9 @@ import Login from "./components/Authentication/User/Login.jsx";
 import Signup from "./components/Authentication/User/Signup.jsx";
 function App() {
   return (
-    <div>
+    <div className="h-100vh">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} /> 
-        <Route path="/signup" element={<Signup />} /> 
+        <Route path="/" element={<Home />} /> 
     
       </Routes>
       <Toaster />
