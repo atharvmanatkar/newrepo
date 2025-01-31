@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -10,10 +12,10 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul className="flex space-x-6 text-lg justify-around">
-          <li><a href="#" className="hover:text-gray-200">Home</a></li>
-          <li><a href="#" className="hover:text-gray-200">About</a></li>
-          <li><a href="#" className="hover:text-gray-200">Services</a></li>
-          <li><a href="#" className="hover:text-gray-200">Contact</a></li>
+        <li><Link to="/" className="hover:text-gray-200">Home</Link></li>
+        <li><Link to="/aboutus" className="hover:text-gray-200">About</Link></li>
+        <li><Link to="/services" className="hover:text-gray-200">Services</Link></li>
+        <li><Link to="/contact" className="hover:text-gray-200">Contact</Link></li>
         </ul>
       </div>
     </nav>

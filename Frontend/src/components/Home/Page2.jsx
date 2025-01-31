@@ -2,6 +2,8 @@ import React from 'react'
 import Cards from './Cards'
 import cimg from '../../assets/cimg.avif'
 import ill2 from '../../assets/ill2.svg'
+import { Link } from "react-router-dom";
+import Regevents from './Regevents';
 
 const Page2 = () => {
   return (
@@ -13,7 +15,9 @@ const Page2 = () => {
           <Cards title="title" description="decription" image={cimg}/>
           <Cards title="title" description="decription" image={cimg}/>
         </div>
-        <a href="" className='ml-40 text-xl'>More Events</a>
+        <Link to="/allevents" className="ml-40 text-xl">
+        More Events
+        </Link>
       </div>
 
       <div className='flex mb-10' >
@@ -21,9 +25,7 @@ const Page2 = () => {
         <img src={ill2} className='h-100 mt-12' />
       </div>
 
-
-      
-      
+      <Regevents/>
     </div>
   )
 }

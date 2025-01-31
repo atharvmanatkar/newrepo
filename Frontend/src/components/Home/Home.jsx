@@ -8,6 +8,7 @@ import Page1 from './Page1'
 import Page2 from './Page2'
 import Footer from './Footer'
 import AllEvents from './AllEvents.jsx'
+import Leaderboard from './Leaderboard.jsx'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <Page1 />
       <Page2/>
       <Footer/>
+      
     </div>
 
   )

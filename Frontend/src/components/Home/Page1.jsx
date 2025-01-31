@@ -7,13 +7,13 @@ const Page1 = () => {
     <div className='h-100vh'> 
         <div className='flex'>
 
-            <div className=' w-[60%] h-100 ml-30 flex justify-between mt-10 rounded-3xl'>
+            <div className=' w-[50%] h-100 ml-30 flex justify-between mt-10 rounded-3xl'>
                 <p className='text-7xl px-10 mt-10 leading-tight'>From <span className='bg-yellow-200 rounded-3xl text-6xl px-2'>DREAMS</span> to Reality: A Journey of <span className='bg-yellow-200 rounded-3xl text-6xl px-2'>CREATIVITY,</span> 
                 <span className='bg-yellow-200 rounded-3xl text-6xl px-2'>COMPETITION,</span> and <span className='bg-yellow-200 rounded-3xl text-6xl px-2'>CELEBRATION</span></p>
             </div>
 
             <div className='mt-20 ml-10 mr-20 bg-red-100'>
-                <img src={imgpg1} className='h-100 '/>
+                <img src={imgpg1} className='h-100 w-200'/>
             </div>
         </div>
 
