@@ -10,6 +10,8 @@ import AllEvents from "./components/Home/AllEvents.jsx";
 import ContactUs from "./components/Home/ContactUs.jsx";
 import AboutUs from "./components/Home/AboutUs.jsx";
 import OurServices from "./components/Home/OurServices.jsx";
+import BadgeSystem from "./components/Home/BadgeSystem.jsx";
+import Myevents from "./components/Home/Myevents.jsx";
 function App() {
   return (
     <div className="h-100vh">
@@ -19,6 +21,8 @@ function App() {
         <Route path="/contact" element={<ContactUs/>} /> 
         <Route path="/aboutus" element={<AboutUs/>} /> 
         <Route path="/services" element={<OurServices/>} /> 
+        <Route path="/badges" element={<BadgeSystem/>} /> 
+        <Route path="/myevents" element={<Myevents/>} /> 
 
     
       </Routes>

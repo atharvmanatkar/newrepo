@@ -9,8 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">About Us</h3>
             <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-              urna orci. Nulla facilisi.
+            We are a team dedicated to ensuring that college events run smoothly, efficiently, and better than ever before. Our platform helps manage events, streamline operations, and enhance the overall experience for both organizers and participants.
             </p>
           </div>
 
@@ -36,9 +35,9 @@ const Footer = () => {
           {/* Column 3 */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact</h3>
-            <p className="text-sm">123 Main Street, City, Country</p>
-            <p className="text-sm">Phone: +1 234 567 890</p>
-            <p className="text-sm">Email: contact@example.com</p>
+            <p className="text-sm">EventEcho Team</p>
+            <p className="text-sm">Phone: 8830661449</p>
+            <p className="text-sm">Email: eventecho.223@gmail.com</p>
           </div>
 
           {/* Column 4 */}
