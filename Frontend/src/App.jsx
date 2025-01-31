@@ -9,6 +9,7 @@ import Signup from "./components/Authentication/User/Signup.jsx";
 import AllEvents from "./components/Home/AllEvents.jsx";
 import ContactUs from "./components/Home/ContactUs.jsx";
 import AboutUs from "./components/Home/AboutUs.jsx";
+import OurServices from "./components/Home/OurServices.jsx";
 function App() {
   return (
     <div className="h-100vh">
@@ -17,6 +18,7 @@ function App() {
         <Route path="/allevents" element={<AllEvents/>} /> 
         <Route path="/contact" element={<ContactUs/>} /> 
         <Route path="/aboutus" element={<AboutUs/>} /> 
+        <Route path="/services" element={<OurServices/>} /> 
 
     
       </Routes>

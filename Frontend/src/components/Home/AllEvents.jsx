@@ -1,96 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
+import cimg from "../../assets/cimg.avif";
 import Navbar from './Navbar';
 
-const eventsData = [
-  {
-    id: 1,
-    name: 'Gaming Tournament',
-    status: 'Ongoing',
-    image: 'https://via.placeholder.com/150',
-    prizePool: '$5,000',
-    description: 'Join the gaming competition and win big!',
-  },
-  {
-    id: 2,
-    name: 'Hackathon 2025',
-    status: 'Upcoming',
-    image: 'https://via.placeholder.com/150',
-    prizePool: '$10,000',
-    description: 'A coding marathon for tech enthusiasts.',
-  },
-  {
-    id: 3,
-    name: 'Art Exhibition',
-    status: 'Finished',
-    image: 'https://via.placeholder.com/150',
-    prizePool: 'N/A',
-    description: 'Showcasing the finest pieces of art.',
-  },
-  {
-    id: 3,
-    name: 'Art Exhibition',
-    status: 'Finished',
-    image: 'https://via.placeholder.com/150',
-    prizePool: 'N/A',
-    description: 'Showcasing the finest pieces of art.',
-  },
-  // Add more event objects here
-];
-
-const AllEvents = () => {
-  const [filter, setFilter] = useState('All');
-
-  // Filter events based on the selected status
-  const filteredEvents = eventsData.filter((event) => 
-    filter === 'All' || event.status === filter
-  );
+const Cards = () => {
+  const [events] = React.useState([
+    { title: 'Ongoing Event 1', description: 'Description for ongoing event 1', type: 'ongoing' },
+    { title: 'Upcoming Event 1', description: 'Description for upcoming event 1', type: 'upcoming' },
+    { title: 'Finished Event 1', description: 'Description for finished event 1', type: 'finished' },
+    { title: 'Ongoing Event 2', description: 'Description for ongoing event 2', type: 'ongoing' },
+    { title: 'Upcoming Event 2', description: 'Description for upcoming event 2', type: 'upcoming' },
+    { title: 'Finished Event 2', description: 'Description for finished event 2', type: 'finished' },
+  ]);
 
   return (
-    <div className="container ">
-      <Navbar/>
-      <div className="mb-6 px-10 mt-10 ">
-        <button
-          onClick={() => setFilter('All')}
-          className="bg-blue-500 text-white px-4 py-2 rounded mr-4 hover:bg-blue-600"
-        >
-          All Events
-        </button>
-        <button
-          onClick={() => setFilter('Ongoing')}
-          className="bg-yellow-500 text-white px-4 py-2 rounded mr-4 hover:bg-yellow-600"
-        >
-          Ongoing
-        </button>
-        <button
-          onClick={() => setFilter('Upcoming')}
-          className="bg-green-500 text-white px-4 py-2 rounded mr-4 hover:bg-green-600"
-        >
-          Upcoming
-        </button>
-        <button
-          onClick={() => setFilter('Finished')}
-          className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
-        >
-          Finished
-        </button>
-      </div>
-
-      {/* Events Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10 mb-10">
-        {filteredEvents.map((event) => (
-          <div key={event.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src={event.image} alt={event.name} className="w-full h-40 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">{event.name}</h3>
-              <p className="text-sm text-gray-500">{event.status}</p>
-              <p className="text-lg font-bold mt-2">{event.prizePool}</p>
-              <p className="text-sm text-gray-700 mt-2">{event.description}</p>
-              <a
-                href="#"
-                className="text-blue-500 mt-4 inline-block hover:underline"
-              >
+    <div className="w-full">
+      <Navbar />
+      <h2 className='ml-20 text-3xl mt-10'>All Events</h2>
+      {/* Cards Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-6 mx-10 mt-5 mb-10"> {/* Adjusted gap */}
+        {events.map((event, index) => (
+          <div key={index} className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white mb-4"> {/* Added mb-4 to all cards */}
+            <img className="w-full h-48 object-cover" src={cimg} alt={event.title} />
+            <div className="px-6 py-5">
+              <div className="font-bold text-xl mb-2">{event.title}</div>
+              <p className="text-gray-700 text-base">{event.description}</p>
+            </div>
+            <div className="px-6 py-4">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
                 Learn More
-              </a>
+              </button>
             </div>
           </div>
         ))}
@@ -99,4 +37,4 @@ const AllEvents = () => {
   );
 };
 
-export default AllEvents;
+export default Cards;

@@ -64,20 +64,20 @@ const AboutUs = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h4 className="text-2xl font-semibold text-yellow-200">Easy Event Creation</h4>
+            <h4 className="text-2xl font-semibold text-blue-600">Easy Event Creation</h4>
             <p className="mt-3">
               Create events with just a few clicks. Manage registrations, schedules, and updates easily.
             </p>
           </div>
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h4 className="text-2xl font-semibold text-yellow-200">Smooth Collaboration</h4>
+            <h4 className="text-2xl font-semibold text-blue-600">Smooth Collaboration</h4>
             <p className="mt-3">
               Foster teamwork and collaboration with real-time messaging, updates, and group coordination.
             </p>
           </div>
 
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h4 className="text-2xl font-semibold text-yellow-200">Real-Time Updates</h4>
+            <h4 className="text-2xl font-semibold text-blue-600">Real-Time Updates</h4>
             <p className="mt-3">
               Get instant updates on event schedules, announcements, and any last-minute changes.
             </p>
@@ -90,19 +90,19 @@ const AboutUs = () => {
         <h3 className="text-4xl font-bold text-blue-600 mb-6">How It Works</h3>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h4 className="text-2xl font-semibold text-yellow-200">1. Plan</h4>
+            <h4 className="text-2xl font-semibold text-blue-600">1. Plan</h4>
             <p className="mt-3">
               Define event details, schedules, and invite participants.
             </p>
           </div>
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h4 className="text-2xl font-semibold text-yellow-200">2. Organize</h4>
+            <h4 className="text-2xl font-semibold text-blue-600">2. Organize</h4>
             <p className="mt-3">
               Manage registrations, communicate with attendees, and set up logistics.
             </p>
           </div>
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h4 className="text-2xl font-semibold text-yellow-200">3. Execute</h4>
+            <h4 className="text-2xl font-semibold text-blue-600">3. Execute</h4>
             <p className="mt-3">
               Run the event smoothly with real-time updates and collaboration tools.
             </p>
@@ -111,11 +111,11 @@ const AboutUs = () => {
       </div>
 
       {/* Expanded Footer Section */}
-      <footer className="bg-blue-600 text-white py-12 mt-16 w-full">
+      <footer className="bg-blue-700 text-white py-20 mt-16 w-full">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
           <p className="text-lg">&copy; 2025 College Event Management. All Rights Reserved.</p>
           <div className="flex space-x-6 mt-6 md:mt-0">
-            <a href="#" className="hover:text-yellow-200 transition text-lg">Contact Us</a>
+            <a href="#" className="hover:text-blue-200 transition text-lg">Contact Us</a>
           </div>
         </div>
       </footer>
