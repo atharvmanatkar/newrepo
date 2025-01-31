@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar';
 
 const eventsData = [
   {
@@ -25,6 +26,14 @@ const eventsData = [
     prizePool: 'N/A',
     description: 'Showcasing the finest pieces of art.',
   },
+  {
+    id: 3,
+    name: 'Art Exhibition',
+    status: 'Finished',
+    image: 'https://via.placeholder.com/150',
+    prizePool: 'N/A',
+    description: 'Showcasing the finest pieces of art.',
+  },
   // Add more event objects here
 ];
 
@@ -37,9 +46,9 @@ const AllEvents = () => {
   );
 
   return (
-    <div className="container mx-auto p-6">
-      {/* Filter Section */}
-      <div className="mb-6">
+    <div className="container ">
+      <Navbar/>
+      <div className="mb-6 px-10 mt-10 ">
         <button
           onClick={() => setFilter('All')}
           className="bg-blue-500 text-white px-4 py-2 rounded mr-4 hover:bg-blue-600"
@@ -67,7 +76,7 @@ const AllEvents = () => {
       </div>
 
       {/* Events Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10 mb-10">
         {filteredEvents.map((event) => (
           <div key={event.id} className="bg-white rounded-lg shadow-md overflow-hidden">
             <img src={event.image} alt={event.name} className="w-full h-40 object-cover" />

@@ -16,7 +16,6 @@ const Home = () => {
       <Navbar/>
       <Page1 />
       <Page2/>
-      <AllEvents/>
       <Footer/>
     </div>
 

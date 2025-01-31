@@ -1,5 +1,6 @@
 import React from 'react'
 import imgpg1 from '../../assets/imgpg1.jpg'
+import { Link } from "react-router-dom";
 
 const Page1 = () => {
   return (
@@ -16,9 +17,14 @@ const Page1 = () => {
             </div>
         </div>
 
-        <div >
+        <div className='flex'>
         <button className="rounded-xl bg-blue-600 ml-40 w-60 h-12 text-xl text-white border-2 border-blue-600 transition duration-300 hover:bg-white hover:text-blue-600">HOST A EVENT</button>
-        <button className="rounded-xl bg-white border-2 border-blue-600 ml-7 w-60 h-12 text-xl text-blue-600 transition duration-300 hover:bg-blue-600 hover:text-white">PARTICIPATE</button>
+        <Link
+        to="/allevents"
+        className="rounded-xl bg-blue-600 ml-10 w-60 h-12 text-xl text-white border-2 border-blue-600 flex items-center justify-center transition duration-300 hover:bg-white hover:text-blue-600"
+        >
+        PARTICIPATE
+        </Link>
         </div>
     </div>
   )
